@@ -1,2 +1,19 @@
-server:
-  port: 8090
+spring:
+  profiles:
+    active:
+    - dev
+
+---
+spring:
+  profiles: dev
+  application:
+    name: microservicecloud-config-yjq-dev
+
+
+
+
+---
+spring:
+  profiles: test
+  application:
+    name: microservicecloud-config-yjq-test
